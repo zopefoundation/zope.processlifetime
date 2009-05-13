@@ -22,7 +22,7 @@ def read(*rnames):
 
 setup(
     name='zope.processlifetime',
-    version = '1.0dev',
+    version = '1.0',
     author='Zope Corporation and Contributors',
     author_email='zope-dev@zope.org',
     description="Zope process lifetime events",
