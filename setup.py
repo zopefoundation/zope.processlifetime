@@ -1,6 +1,6 @@
 ##############################################################################
 #
-# Copyright (c) 2006 Zope Corporation and Contributors.
+# Copyright (c) 2009 Zope Corporation and Contributors.
 # All Rights Reserved.
 #
 # This software is subject to the provisions of the Zope Public License,
@@ -12,13 +12,10 @@
 #
 ##############################################################################
 """Setup for zope.processlifetime package
-
-$Id$
 """
-
 import os
-
-from setuptools import setup, find_packages
+from setuptools import find_packages
+from setuptools import setup
 
 def read(*rnames):
     return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
