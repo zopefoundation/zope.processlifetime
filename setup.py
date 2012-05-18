@@ -22,7 +22,7 @@ def read(*rnames):
 
 setup(
     name='zope.processlifetime',
-    version = '1.0',
+    version = '2.0dev',
     author='Zope Foundation and Contributors',
     author_email='zope-dev@zope.org',
     description="Zope process lifetime events",
@@ -36,6 +36,9 @@ setup(
         'Intended Audience :: Developers',
         'License :: OSI Approved :: Zope Public License',
         'Programming Language :: Python',
+        'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 2.6',
+        'Programming Language :: Python :: 2.7',
         'Natural Language :: English',
         'Operating System :: OS Independent',
         'Topic :: Internet :: WWW/HTTP',
