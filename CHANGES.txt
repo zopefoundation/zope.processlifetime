@@ -1,8 +1,8 @@
 zope.processlifetime Changelog
 ==============================
 
-2.0 (2013-02-22)
-----------------
+2.0.0 (2013-02-22)
+------------------
 
 - Replaced deprecated ``zope.interface.implements`` usage with equivalent
   ``zope.interface.implementer`` decorator.
