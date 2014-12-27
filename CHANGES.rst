@@ -4,6 +4,8 @@ Changes
 2.1.0 (unreleased)
 ------------------
 
+- Add support for PyPy and PyPy3.
+
 - Add support for Python 3.4.
 
 - Add support for testing on Travis.
