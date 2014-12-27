@@ -17,7 +17,8 @@ import os
 from setuptools import find_packages, setup
 
 def read(*rnames):
-    return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
+    with open(os.path.join(os.path.dirname(__file__), *rnames)) as f:
+        return f.read()
 
 setup(
     name='zope.processlifetime',
@@ -25,8 +26,8 @@ setup(
     author='Zope Foundation and Contributors',
     author_email='zope-dev@zope.org',
     description="Zope process lifetime events",
-    long_description=(read('README.txt') + '\n\n' +
-                      read('CHANGES.txt')),
+    long_description=(read('README.rst') + '\n\n' +
+                      read('CHANGES.rst')),
     license='ZPL 2.1',
     keywords="zope process lifetime events",
     classifiers=[

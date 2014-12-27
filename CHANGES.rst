@@ -1,21 +1,21 @@
-zope.processlifetime Changelog
-==============================
+Changes
+=======
 
 2.0.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add support for testing on Travis.
 
 
 2.0.0 (2013-02-22)
 ------------------
 
-- Replaced deprecated ``zope.interface.implements`` usage with equivalent
+- Replace deprecated ``zope.interface.implements`` usage with equivalent
   ``zope.interface.implementer`` decorator.
 
-- Dropped support for Python 2.4 and 2.5.
+- Add support for Python 3.2 and 3.3
 
-- Added support for Python 3.2 and 3.3
+- Drop support for Python 2.4 and 2.5.
 
 
 
