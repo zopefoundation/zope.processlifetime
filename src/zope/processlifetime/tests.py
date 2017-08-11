@@ -59,8 +59,4 @@ class ProcessStartingTests(unittest.TestCase):
         verifyObject(IProcessStarting, self._getTargetClass()())
 
 def test_suite():
-    return unittest.TestSuite((
-        unittest.makeSuite(DatabaseOpenedTests),
-        unittest.makeSuite(DatabaseOpenedWithRootTests),
-        unittest.makeSuite(ProcessStartingTests),
-    ))
+    return unittest.defaultTestLoader.loadTestsFromName(__name__)

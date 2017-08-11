@@ -7,3 +7,6 @@ src/*.egg-info
 bin
 develop-eggs
 parts
+.coverage
+htmlcov/
+docs/_build/
