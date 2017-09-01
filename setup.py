@@ -39,9 +39,9 @@ setup(
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: Implementation :: CPython',
         'Programming Language :: Python :: Implementation :: PyPy',
         'Natural Language :: English',
@@ -49,15 +49,25 @@ setup(
         'Topic :: Internet :: WWW/HTTP',
         'Framework :: Zope3',
         'Framework :: Zope2',
-        ],
-    url='http://pypi.python.org/pypi/zope.processlifetime',
+    ],
+    url='http://github.com/zopefoundation/zope.processlifetime',
     packages=find_packages('src'),
     package_dir={'': 'src'},
     test_suite='zope.processlifetime.tests',
     namespace_packages=['zope'],
-    install_requires=['setuptools',
-                      'zope.interface',
-                     ],
+    install_requires=[
+        'setuptools',
+        'zope.interface',
+    ],
+    extras_require={
+        'test': [
+            'zope.testrunner',
+        ],
+        'docs': [
+            'Sphinx',
+            'repoze.sphinx.autointerface',
+        ],
+    },
     include_package_data=True,
     zip_safe=False,
-    )
+)

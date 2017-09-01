@@ -24,17 +24,27 @@ class IDatabaseOpened(Interface):
 
 @implementer(IDatabaseOpened)
 class DatabaseOpened(object):
+    """
+    Implementation of :class:`~zope.processlifetime.IDatabaseOpened`.
+    """
 
     def __init__(self, database):
         self.database = database
 
 class IDatabaseOpenedWithRoot(Interface):
-    """The main database has been opened.
+    """
+    The main database has been opened having the root application
+    object.
+
+    This typically follows :class:`~zope.processlifetime.IDatabaseOpened`.
     """
     database = Attribute("The main database.")
 
 @implementer(IDatabaseOpenedWithRoot)
 class DatabaseOpenedWithRoot(object):
+    """
+    Implementation of :class:`~zope.processlifetime.IDatabaseOpenedWithRoot`.
+    """
 
     def __init__(self, database):
         self.database = database
@@ -45,4 +55,6 @@ class IProcessStarting(Interface):
 
 @implementer(IProcessStarting)
 class ProcessStarting(object):
-    pass
+    """
+    Implementation of :class:`~zope.processlifetime.IProcessStarting`.
+    """
