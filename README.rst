@@ -11,7 +11,7 @@
         :target: https://pypi.org/project/zope.processlifetime/
         :alt: Supported Python versions
 
-.. image:: https://travis-ci.org/zopefoundation/zope.processlifetime.png?branch=master
+.. image:: https://travis-ci.org/zopefoundation/zope.processlifetime.svg?branch=master
         :target: https://travis-ci.org/zopefoundation/zope.processlifetime
 
 .. image:: https://coveralls.io/repos/github/zopefoundation/zope.processlifetime/badge.svg?branch=master
