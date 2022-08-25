@@ -17,6 +17,7 @@ from zope.interface import Attribute
 from zope.interface import Interface
 from zope.interface import implementer
 
+
 class IDatabaseOpened(Interface):
     """The main database has been opened.
     """
