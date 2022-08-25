@@ -23,6 +23,7 @@ def read(*rnames):
     with open(os.path.join(os.path.dirname(__file__), *rnames)) as f:
         return f.read()
 
+
 setup(
     name='zope.processlifetime',
     version='2.4.dev0',
