@@ -14,7 +14,10 @@
 """Setup for zope.processlifetime package
 """
 import os
-from setuptools import find_packages, setup
+
+from setuptools import find_packages
+from setuptools import setup
+
 
 def read(*rnames):
     with open(os.path.join(os.path.dirname(__file__), *rnames)) as f:
