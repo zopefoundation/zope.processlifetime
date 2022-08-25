@@ -31,6 +31,7 @@ class DatabaseOpenedTests(unittest.TestCase):
         from zope.processlifetime import IDatabaseOpened
         verifyObject(IDatabaseOpened, self._getTargetClass()(object()))
 
+
 class DatabaseOpenedWithRootTests(unittest.TestCase):
     def _getTargetClass(self):
         from zope.processlifetime import DatabaseOpenedWithRoot
@@ -48,6 +49,7 @@ class DatabaseOpenedWithRootTests(unittest.TestCase):
         from zope.processlifetime import IDatabaseOpenedWithRoot
         verifyObject(IDatabaseOpenedWithRoot, self._getTargetClass()(object()))
 
+
 class ProcessStartingTests(unittest.TestCase):
     def _getTargetClass(self):
         from zope.processlifetime import ProcessStarting
@@ -64,6 +66,7 @@ class ProcessStartingTests(unittest.TestCase):
 
         from zope.processlifetime import IProcessStarting
         verifyObject(IProcessStarting, self._getTargetClass()())
+
 
 def test_suite():
     return unittest.defaultTestLoader.loadTestsFromName(__name__)

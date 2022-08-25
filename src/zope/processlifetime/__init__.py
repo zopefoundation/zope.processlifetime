@@ -23,6 +23,7 @@ class IDatabaseOpened(Interface):
     """
     database = Attribute("The main database.")
 
+
 @implementer(IDatabaseOpened)
 class DatabaseOpened(object):
     """
@@ -31,6 +32,7 @@ class DatabaseOpened(object):
 
     def __init__(self, database):
         self.database = database
+
 
 class IDatabaseOpenedWithRoot(Interface):
     """
@@ -41,6 +43,7 @@ class IDatabaseOpenedWithRoot(Interface):
     """
     database = Attribute("The main database.")
 
+
 @implementer(IDatabaseOpenedWithRoot)
 class DatabaseOpenedWithRoot(object):
     """
@@ -50,9 +53,11 @@ class DatabaseOpenedWithRoot(object):
     def __init__(self, database):
         self.database = database
 
+
 class IProcessStarting(Interface):
     """The application server process is starting.
     """
+
 
 @implementer(IProcessStarting)
 class ProcessStarting(object):
