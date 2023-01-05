@@ -25,7 +25,7 @@ class IDatabaseOpened(Interface):
 
 
 @implementer(IDatabaseOpened)
-class DatabaseOpened(object):
+class DatabaseOpened:
     """
     Implementation of :class:`~zope.processlifetime.IDatabaseOpened`.
     """
@@ -45,7 +45,7 @@ class IDatabaseOpenedWithRoot(Interface):
 
 
 @implementer(IDatabaseOpenedWithRoot)
-class DatabaseOpenedWithRoot(object):
+class DatabaseOpenedWithRoot:
     """
     Implementation of :class:`~zope.processlifetime.IDatabaseOpenedWithRoot`.
     """
@@ -60,7 +60,7 @@ class IProcessStarting(Interface):
 
 
 @implementer(IProcessStarting)
-class ProcessStarting(object):
+class ProcessStarting:
     """
     Implementation of :class:`~zope.processlifetime.IProcessStarting`.
     """
