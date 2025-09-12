@@ -15,7 +15,6 @@
 """
 import os
 
-from setuptools import find_packages
 from setuptools import setup
 
 
@@ -26,7 +25,7 @@ def read(*rnames):
 
 setup(
     name='zope.processlifetime',
-    version='3.2.dev0',
+    version='4.0.dev0',
     author='Zope Foundation and Contributors',
     author_email='zope-dev@zope.dev',
     description="Zope process lifetime events",
@@ -55,9 +54,6 @@ setup(
         'Framework :: Zope :: 5',
     ],
     url='http://github.com/zopefoundation/zope.processlifetime',
-    packages=find_packages('src'),
-    package_dir={'': 'src'},
-    namespace_packages=['zope'],
     python_requires='>=3.9',
     install_requires=[
         'setuptools',
@@ -65,7 +61,7 @@ setup(
     ],
     extras_require={
         'test': [
-            'zope.testrunner',
+            'zope.testrunner >= 6.4',
         ],
         'docs': [
             'Sphinx',
