@@ -9,7 +9,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "zope.processlifetime"
-version = "4.1.dev0"
+version = "4.1"
 description = "Zope process lifetime events"
 license = "ZPL-2.1"
 classifiers = [
